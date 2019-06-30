@@ -1,0 +1,57 @@
+﻿@model IEnumerable<strakcinema.creditcard>
+
+@{
+    ViewBag.Title = "Card Details";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.card_num)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.card_type)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.card_name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.card_expiry)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.card_cvv)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.card_num)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.card_type)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.card_name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.card_expiry)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.card_cvv)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.card_id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.card_id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.card_id })
+        </td>
+    </tr>
+}
+
+</table>

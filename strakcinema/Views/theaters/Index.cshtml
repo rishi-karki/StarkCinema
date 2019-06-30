@@ -1,0 +1,1424 @@
+﻿@model IEnumerable<strakcinema.theater>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <title>Stark Cinemas</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" sizes="96x96" type="image/png" href="/assets/favicon-96x96.png" />
+    <link rel="icon" sizes="32x32" type="image/png" href="/assets/favicon-32x32.png" />
+    <link rel="icon" sizes="16x16" type="image/png" href="/assets/favicon-16x16.png" />
+    <link rel="mask-icon" color="#0075bc" href="/assets/safari-pinned-tab.svg" />
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico" />
+
+    <link rel="stylesheet" property="stylesheet" href="/assets/css/core-dccc135a21a1dd3372cd5890100a0531.css" />
+
+
+
+    <meta name="description" content="The biggest blockbusters are just one click away. Discover the perfect movie, find session times, and book tickets at VOX Cinemas." />
+
+
+</head>
+<body class="region-ae " data-segment-title="Compare Film Times">
+    <script>
+        window.dataLayer = window.dataLayer || [];
+    </script>
+
+
+    <!-- Optimize Page Hiding Snippet -->
+    <style>
+        .async-hide {
+            opacity: 0 !important
+        }
+    </style>
+    <script>
+        (function (a, s, y, n, c, h, i, d, e) {
+            s.className += ' ' + y; h.start = 1 * new Date;
+            h.end = i = function () { s.className = s.className.replace(RegExp(' ?' + y), '') };
+            (a[n] = a[n] || []).hide = h; setTimeout(function () { i(); h.end = null }, c); h.timeout = c;
+        })(window, document.documentElement, 'async-hide', 'dataLayer', 4000,
+            { 'GTM-5WSL5DW': true });</script>
+
+    <!-- Analytics-Optimize Snippet -->
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-72848066-1', 'auto');
+        ga('require', 'GTM-5WSL5DW');
+    </script>
+
+
+
+    <script>
+        window.dataLayer = window.dataLayer || [];
+    </script>
+
+    <script>
+        dataLayer.push({ "authenticated": false });
+    </script>
+
+
+    <!-- Google Tag Manager -->
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-5PMMF4" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-5PMMF4');</script>
+    <!-- End Google Tag Manager -->
+
+    <script>
+        !function () {
+            var analytics = window.analytics = window.analytics || []; if (!analytics.initialize) if (analytics.invoked) window.console && console.error && console.error("Segment snippet included twice."); else {
+                analytics.invoked = !0; analytics.methods = ["trackSubmit", "trackClick", "trackLink", "trackForm", "pageview", "identify", "reset", "group", "track", "ready", "alias", "debug", "page", "once", "off", "on"]; analytics.factory = function (t) { return function () { var e = Array.prototype.slice.call(arguments); e.unshift(t); analytics.push(e); return analytics } }; for (var t = 0; t < analytics.methods.length; t++) { var e = analytics.methods[t]; analytics[e] = analytics.factory(e) } analytics.load = function (t, e) { var n = document.createElement("script"); n.type = "text/javascript"; n.async = !0; n.src = "https://cdn.segment.com/analytics.js/v1/" + t + "/analytics.min.js"; var a = document.getElementsByTagName("script")[0]; a.parentNode.insertBefore(n, a); analytics._loadOptions = e }; analytics.SNIPPET_VERSION = "4.1.0";
+                analytics.load('Yp26kWlr0WBCh9NLjksaEy8x1oXCDuc9');
+
+                if (document.body.hasAttribute('data-segment-title')) {
+                    analytics.page(document.body.getAttribute('data-segment-title'));
+                } else {
+                    analytics.page();
+                }
+            }
+        }();
+    </script>
+
+
+    <div class="container">
+
+        <section class="site-search-banner" data-banner="site-search" style="display: none;">
+            <article>
+                <form class="search" action="/search" method="get" autocomplete="off">
+
+                    <label class="">
+                        <span>Keyword(s)</span>
+                        <input type="text" name="q" value="" required />
+
+
+                    </label>
+
+
+                    <button type="submit" class="action secondary">Search</button>
+
+                    <a class="action primary outline" data-dismiss="true">Close</a>
+                </form>
+            </article>
+        </section>
+
+        <header role="banner">
+            <section>
+                <a class="brand vox" href="/" title="VOX Cinemas">VOX Cinemas</a>
+
+                <nav class="light tertiary anonymous" role="navigation">
+                    <ul>
+                        <li class="site-search" data-target="site-search">
+                            <a href="/search" title="Search">
+                                <span class="iconography white no-text hide-tablet hide-phone" data-glyph="search"></span>
+                                <span class="iconography blue no-text hide-desktop" data-glyph="search"></span>
+                            </a>
+                        </li>
+                        <li class="site-login">
+                            <a class="" href="/account/login"><span class="iconography blue no-text hide-desktop" data-glyph="account"></span> <span class="hide-tablet hide-phone">Login</span></a>
+                        </li>
+                        <li class="hide-phone hide-tablet">
+                            <a class="" href="/rewards">Rewards</a>
+                        </li>
+                        <li class="locale hide-phone hide-tablet">
+                            <span class="flag en">
+                                <a class="" href="https://uae.voxcinemas.com/regions" title="Change my region">
+                                    <img src="/assets/images/region/ae-128x128.png" alt="UAE" />
+                                    <span>UAE</span>
+                                </a>
+                            </span>
+
+                        </li>
+                    </ul>
+                </nav>
+
+                <a class="flyout hide-desktop" data-target="navigation"><span class="iconography blue no-text" data-glyph="menu"></span></a>
+            </section>
+
+            <section>
+                <nav class="dark primary" role="navigation" data-flyout="navigation">
+                    <ul>
+                        <li class="has-children">
+                            <a class="" href="/movies/whatson">MOVIES <span aria-hidden="true" class="iconic" data-glyph="caret-bottom"></span></a>
+                            <ul>
+                                <li class=""><a class="" href="/movies/whatson">What's On</a></li>
+                                <li class=""><a class="" href="/movies/comingsoon">Coming Soon</a></li>
+                            </ul>
+                        </li>
+                        <li class="">
+                            <a class="" href="/food-and-drinks">FOOD & DRINKS</a>
+                        </li>
+                        <li class="">
+                            <a class="" href="/promotions">PROMOTIONS</a>
+                        </li>
+                        <li class="has-children">
+                            <a class="" href="/ways-to-watch/summary">WAYS TO WATCH <span aria-hidden="true" class="iconic" data-glyph="caret-bottom"></span></a>
+                            <ul>
+                                <li class=""><a class="" href="/ways-to-watch/theatre-by-rhodes">THEATRE by Rhodes</a></li>
+                                <li class=""><a class="" href="/ways-to-watch/imax">IMAX</a></li>
+                                <li class=""><a class="" href="/ways-to-watch/max">MAX</a></li>
+                                <li class=""><a class="" href="/ways-to-watch/gold">GOLD by Rhodes</a></li>
+                                <li class=""><a class="" href="/ways-to-watch/4dx">4DX</a></li>
+                                <li class=""><a class="" href="/ways-to-watch/kids">KIDS</a></li>
+                                <li class=""><a class="" href="/ways-to-watch/outdoor">OUTDOOR</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-children">
+                            <a class="" href="/ticket-offer/summary">TICKET OFFERS <span aria-hidden="true" class="iconic" data-glyph="caret-bottom"></span></a>
+                            <ul>
+                                <li class=""><a class="" href="/ticket-offer/du-tuesday">du Tuesday</a></li>
+                                <li class=""><a class="" href="/ticket-offer/emirates-nbd">Emirates NBD Offers</a></li>
+                                <li class=""><a class="" href="/ticket-offer/najm">NAJM Offers</a></li>
+                                <li class=""><a class="" href="/ticket-offer/hsbc">HSBC Offers</a></li>
+                                <li class=""><a class="" href="/ticket-offer/citibank">Citibank Offers</a></li>
+                                <li class=""><a class="" href="/ticket-offer/standard-chartered-bank">StanChart Offers</a></li>
+                                <li class=""><a class="" href="/ticket-offer/fab">FAB Offers</a></li>
+                                <li class=""><a class="" href="/ticket-offer/cbd">CBD Offers</a></li>
+                                <li class=""><a class="" href="/ticket-offer/adcb">ADCB Offers</a></li>
+                                <li class=""><a class="" href="/ticket-offer/visa">Visa Offers</a></li>
+                                <li class=""><a class="" href="/ticket-offer/liv">Liv. Offers</a></li>
+                                <li class=""><a class="" href="/ticket-offer/nbf">NBF Offers</a></li>
+                                <li class=""><a class="" href="/ticket-offer/flexi-visa">Flexi Emirates NBD Offers</a></li>
+                                <li class=""><a class="" href="/ticket-offer/noor-bank">Noor Bank Offers</a></li>
+                            </ul>
+                        </li>
+                        <li class="locale hide-desktop">
+                            <span class="flag en">
+                                <a class="" href="https://uae.voxcinemas.com/regions" title="Change my region">
+                                    <img src="/assets/images/region/ae-128x128.png" alt="UAE" />
+                                    <span>UAE</span>
+                                </a>
+                            </span>
+
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+        </header>
+
+        <main role="main">
+            <section class="book-tickets hide-embed">
+                <nav>
+                    <form class="quick-filter" action="/showtimes" method="get" autocomplete="off">
+
+                        <div class="pseudo-multi-select cinemas">
+                            <span class="label" data-none="Select Your Cinema(s)" data-selected="{0} Cinema(s) Selected">Select Your Cinema(s)</span>
+                            <div class="dropdown">
+                                <div class="scroll has-toolbar">
+
+
+                                    <ol class="values">
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" name="c" value="abu-dhabi-mall-abu-dhabi" />
+                                                <span>Abu Dhabi Mall - Abu Dhabi</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" name="c" value="al-hamra-mall" />
+                                                <span>Al Hamra Mall</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" name="c" value="al-jimi-mall" />
+                                                <span>Al Jimi Mall</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" name="c" value="burjuman" checked="checked" />
+                                                <span>Burjuman</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" name="c" value="cineplex-grand-hyatt" />
+                                                <span>Cineplex Grand Hyatt</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" name="c" value="city-centre-ajman" />
+                                                <span>City Centre Ajman</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" name="c" value="city-centre-deira" />
+                                                <span>City Centre Deira</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" name="c" value="city-centre-fujairah" />
+                                                <span>City Centre Fujairah</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" name="c" value="city-centre-mirdif" />
+                                                <span>City Centre Mirdif</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" name="c" value="city-centre-sharjah" />
+                                                <span>City Centre Sharjah</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" name="c" value="city-centre-shindagha" />
+                                                <span>City Centre Shindagha</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" name="c" value="mall-of-the-emirates" />
+                                                <span>Mall of the Emirates</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" name="c" value="marina-mall-abu-dhabi" />
+                                                <span>Marina Mall - Abu Dhabi</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" name="c" value="mercato" />
+                                                <span>Mercato</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" name="c" value="nation-towers-abu-dhabi" />
+                                                <span>Nation Towers - Abu Dhabi</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" name="c" value="outdoor-at-aloft-city-centre-deira" />
+                                                <span>OUTDOOR at Aloft City Centre Deira</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" name="c" value="outdoor-at-galleria-dubai" />
+                                                <span>OUTDOOR at Galleria - Dubai</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" name="c" value="yas-mall-abu-dhabi" />
+                                                <span>Yas Mall - Abu Dhabi</span>
+                                            </label>
+                                        </li>
+                                    </ol>
+                                </div>
+
+                                <div class="toolbar">
+                                    <a class="action primary outline clear">Clear All</a>
+                                    <a class="action primary done">Done</a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="pseudo-multi-select movies">
+                            <span class="label" data-none="Select Your Movie(s)" data-all="Any Movie" data-selected="{0} Movie(s) Selected">Select Your Movie(s)</span>
+                            <div class="dropdown">
+                                <div class="scroll has-toolbar">
+                                    <a class="action primary outline all">Any Movie</a>
+
+                                    <ol class="values">
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" name="m" value="airaa-tamil" />
+                                                <span>(Tamil) Airaa</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" name="m" value="aladin-the-brand-new-adventures" />
+                                                <span>Aladin: The Brand New Adventures</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" name="m" value="alita-battle-angel" />
+                                                <span>Alita: Battle Angel</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" name="m" value="argentina-fans-kaatoorkadavu-malayalam" />
+                                                <span>(Malayalam) Argentina Fans Kaatoorkadavu</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" name="m" value="avengers-endgame" />
+                                                <span>Avengers: Endgame</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" name="m" value="badla-hindi" />
+                                                <span>(Hindi) Badla</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" name="m" value="capharnaum-arabic" />
+                                                <span>(Arabic) Capharnaum</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" name="m" value="captain-marvel" />
+                                                <span>Captain Marvel</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" name="m" value="captain-marvel-parents-and-babies-morning" />
+                                                <span>Captain Marvel-Parents &amp; Babies Morning</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" name="m" value="cold-pursuit" />
+                                                <span>Cold Pursuit</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" name="m" value="daght-aaly-egyptian-arabic" />
+                                                <span>(Arabic) Daght A&#39;aly (Egyptian)</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" name="m" value="dumbo" />
+                                                <span>Dumbo</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" name="m" value="escape-room" />
+                                                <span>Escape Room</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" name="m" value="five-feet-apart" />
+                                                <span>Five Feet Apart</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" name="m" value="five-feet-apart-parents-and-babies-mornings" />
+                                                <span>Five Feet Apart-Parents &amp; Babies Mornings</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" name="m" value="green-book" />
+                                                <span>Green Book</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" name="m" value="hotel-mumbai" />
+                                                <span>Hotel Mumbai</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" name="m" value="how-to-train-your-dragon-the-hidden-world" />
+                                                <span>How to Train Your Dragon:The Hidden World</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" name="m" value="junglee-hindi" />
+                                                <span>(Hindi) Junglee</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" name="m" value="kesari-hindi" />
+                                                <span>(Hindi) Kesari</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" name="m" value="khabsa-arabic" />
+                                                <span>(Arabic) Khabsa</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" name="m" value="khabsa-ladies-night-arabic" />
+                                                <span>(Arabic) Khabsa - Ladies Night</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" name="m" value="lahon-w-habs-arabic" />
+                                                <span>(Arabic) Lahon W Habs</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" name="m" value="lakshmis-ntr-telugu" />
+                                                <span>(Telugu) Lakshmi&#39;s NTR</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" name="m" value="little-ladies-night" />
+                                                <span>Little - Ladies Night</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" name="m" value="lucifer-malayalam" />
+                                                <span>(Malayalam) Lucifer</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" name="m" value="majili-telugu" />
+                                                <span>(Telugu) Majili</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" name="m" value="manchester-united-vs-liverpool-2019-arabic" />
+                                                <span>(Arabic) Manchester United VS liverpool-2019</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" name="m" value="manchester-vs-tottenham-hotspur-arabic" />
+                                                <span>(Arabic) Manchester VS Tottenham Hotspur</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" name="m" value="my-hero-academia-parents-and-babies-japanese" />
+                                                <span>(Japanese) My Hero Academia: Parents &amp; Babies</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" name="m" value="my-hero-academia-two-heroes-japanese" />
+                                                <span>(Japanese) My Hero Academia: Two Heroes</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" name="m" value="natpe-thunai-tamil" />
+                                                <span>(Tamil) Natpe Thunai</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" name="m" value="pet-sematary" />
+                                                <span>Pet Sematary</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" name="m" value="project-ghazi-urdu" />
+                                                <span>(Urdu) Project Ghazi</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" name="m" value="raw-hindi" />
+                                                <span>(Hindi) RAW</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" name="m" value="shazam" />
+                                                <span>Shazam!</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" name="m" value="shazam-parents-and-babies-morning" />
+                                                <span>Shazam! - Parents &amp; Babies Morning</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" name="m" value="snow-queen-4" />
+                                                <span>Snow Queen 4</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" name="m" value="super-deluxe-tamil" />
+                                                <span>(Tamil) Super Deluxe</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" name="m" value="the-lego-movie-2" />
+                                                <span>The Lego Movie 2</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" name="m" value="the-professor-and-the-madman" />
+                                                <span>The Professor and  the Madman</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" name="m" value="the-upside" />
+                                                <span>The Upside</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" name="m" value="uaefa-cl-ajax-vs-juventus-arabic" />
+                                                <span>(Arabic) UAEFA CL Ajax VS Juventus</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" name="m" value="uaefa-cl-manchester-united-vs-barcelona-arabic" />
+                                                <span>(Arabic) UAEFA CL Manchester United VS Barcelona</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" name="m" value="uaefa-cl-manchester-united-vs-barcelona" />
+                                                <span>UAEFA CL Manchester United vs Barcelona</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" name="m" value="uaefa-cl-ajax-vs-juventus" />
+                                                <span>UAEFA CL- Ajax VS Juventus</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" name="m" value="uefa-cl-liverpool-vs-porto-arabic" />
+                                                <span>(Arabic) UEFA -CL Liverpool VS Porto</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" name="m" value="uefa-cl-liverpool-vs-porto" />
+                                                <span>UEFA -CL Liverpool VS Porto</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" name="m" value="uefa-cl-tottenham-hotspurvsmanchestercity-arabic" />
+                                                <span>(Arabic) UEFA-CL Tottenham HotspurVSManchesterCity</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" name="m" value="uefa-cl-tottenham-hotspurvsmanchestercity" />
+                                                <span>UEFA-CL Tottenham HotspurVSManchesterCity</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" name="m" value="uncle-naji-in-uae-emirati-arabic" />
+                                                <span>(Emirati [Arabic) Uncle Naji in UAE</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" name="m" value="uriadi-2-tamil" />
+                                                <span>(Tamil) Uriadi -2</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" name="m" value="us" />
+                                                <span>Us</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" name="m" value="we-die-young" />
+                                                <span>We Die Young</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" name="m" value="wonder-park" />
+                                                <span>Wonder Park</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" name="m" value="wonder-park-parents-and-babies" />
+                                                <span>Wonder Park - Parents &amp; Babies</span>
+                                            </label>
+                                        </li>
+                                    </ol>
+                                </div>
+
+                                <div class="toolbar">
+                                    <a class="action primary outline clear">Clear All</a>
+                                    <a class="action primary done">Done</a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <button type="submit" class="action secondary">Find Times and Book</button>
+                    </form>
+                </nav>
+            </section>
+
+
+            <section class="showtimes">
+                <h1>
+                    View Times and Book
+                    <form class="auto-submit" action="/showtimes" method="get" autocomplete="off">
+                        <input type="hidden" class="label-empty" name="c" value="burjuman" />
+
+                        <input type="hidden" class="label-empty" name="d" value="20190406" />
+
+
+                        <label class="">
+                            <span>Sort by</span>
+                            <select name="o">
+                                <option value="r" selected="selected">Recommended</option>
+                                <option value="az">A to Z</option>
+                                <option value="za">Z to A</option>
+                            </select>
+
+
+                        </label>
+
+                    </form>
+                </h1>
+
+
+                <nav class="date-filter">
+                    <div class="scroll">
+                        <div class="viewport">
+                            <ol>
+                                <li>
+                                    <span>Today</span>
+                                </li>
+                                <li>
+                                    <a href="/showtimes?c&#x3D;burjuman&amp;d&#x3D;20190407">Tomorrow</a>
+                                </li>
+                                <li>
+                                    <a href="/showtimes?c&#x3D;burjuman&amp;d&#x3D;20190408">Mon 08 Apr</a>
+                                </li>
+                                <li>
+                                    <a href="/showtimes?c&#x3D;burjuman&amp;d&#x3D;20190409">Tue 09 Apr</a>
+                                </li>
+                                <li>
+                                    <a href="/showtimes?c&#x3D;burjuman&amp;d&#x3D;20190410">Wed 10 Apr</a>
+                                </li>
+                                <li>
+                                    <a href="/showtimes?c&#x3D;burjuman&amp;d&#x3D;20190424">Wed 24 Apr</a>
+                                </li>
+                                <li>
+                                    <a href="/showtimes?c&#x3D;burjuman&amp;d&#x3D;20190425">Thu 25 Apr</a>
+                                </li>
+                                <li>
+                                    <a href="/showtimes?c&#x3D;burjuman&amp;d&#x3D;20190426">Fri 26 Apr</a>
+                                </li>
+                                <li>
+                                    <a href="/showtimes?c&#x3D;burjuman&amp;d&#x3D;20190427">Sat 27 Apr</a>
+                                </li>
+                                <li>
+                                    <a href="/showtimes?c&#x3D;burjuman&amp;d&#x3D;20190428">Sun 28 Apr</a>
+                                </li>
+                                <li>
+                                    <a href="/showtimes?c&#x3D;burjuman&amp;d&#x3D;20190429">Mon 29 Apr</a>
+                                </li>
+                                <li>
+                                    <a href="/showtimes?c&#x3D;burjuman&amp;d&#x3D;20190430">Tue 30 Apr</a>
+                                </li>
+                                <li>
+                                    <a href="/showtimes?c&#x3D;burjuman&amp;d&#x3D;20190501">Wed 01 May</a>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </nav>
+
+
+
+
+
+                <article class="movie-compare" data-slug="shazam">
+                    <aside class="movie-hero" data-slug="shazam">
+                        <img class="hero lazy" src="/assets/images/placeholder-hero-940x328.jpg" data-src="https://assets.voxcinemas.com/heroes/B_HO00006027.jpg" data-broken="/assets/images/broken-hero-940x328.jpg" alt="" />
+
+                        <div>
+                            <h2>Shazam!</h2>
+                            <span class="classification c-pg15 white">PG15</span>
+                            <span class="tag">English</span>
+                            <span class="tag">135 min</span>
+                            <a class="read-more" href="/movies/shazam">Info</a>
+                        </div>
+                    </aside>
+
+
+
+
+
+                    <div class="dates">
+
+                        <h3 class="highlight">Burjuman</h3>
+
+                        <ol class="showtimes">
+                            <li>
+                                <strong>MAX - City 101.6</strong>
+                                <ol>
+                                    <li data-id="0013-119330">
+                                        <a class="action showtime" href="/booking/0013-119330">9:15pm </a>
+                                    </li>
+                                    <li data-id="0013-117238">
+                                        <a class="action showtime" href="/booking/0013-117238">12:10am </a>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <strong>GOLD by Rhodes</strong>
+                                <ol>
+                                    <li data-id="0013-117272">
+                                        <a class="action showtime" href="/booking/0013-117272">8:00pm </a>
+                                    </li>
+                                    <li data-id="0013-118978">
+                                        <a class="action showtime" href="/booking/0013-118978">9:30pm </a>
+                                    </li>
+                                    <li data-id="0013-117273">
+                                        <a class="action showtime" href="/booking/0013-117273">11:00pm <span>3D</span></a>
+                                    </li>
+                                    <li data-id="0013-118979">
+                                        <a class="action showtime" href="/booking/0013-118979">12:30am </a>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <strong>Standard</strong>
+                                <ol>
+                                    <li data-id="0013-118763">
+                                        <a class="action showtime" href="/booking/0013-118763">7:50pm <span>3D</span></a>
+                                    </li>
+                                </ol>
+                            </li>
+                        </ol>
+
+
+                    </div>
+                </article>
+                <hr class="dashed" />
+
+                <article class="movie-compare" data-slug="dumbo">
+                    <aside class="movie-hero" data-slug="dumbo">
+                        <img class="hero lazy" src="/assets/images/placeholder-hero-940x328.jpg" data-src="https://assets.voxcinemas.com/heroes/B_HO00005940.jpg" data-broken="/assets/images/broken-hero-940x328.jpg" alt="" />
+
+                        <div>
+                            <h2>Dumbo</h2>
+                            <span class="classification c-pg white">PG</span>
+                            <span class="tag">English</span>
+                            <span class="tag">115 min</span>
+                            <a class="read-more" href="/movies/dumbo">Info</a>
+                        </div>
+                    </aside>
+
+
+
+
+
+                    <div class="dates">
+
+                        <h3 class="highlight">Burjuman</h3>
+
+                        <ol class="showtimes">
+                            <li>
+                                <strong>Kids</strong>
+                                <ol>
+                                    <li data-id="0013-118606">
+                                        <a class="action showtime" href="/booking/0013-118606">9:00pm </a>
+                                    </li>
+                                </ol>
+                            </li>
+                        </ol>
+
+
+                    </div>
+                </article>
+                <hr class="dashed" />
+
+                <article class="movie-compare" data-slug="raw-hindi">
+                    <aside class="movie-hero" data-slug="raw-hindi">
+                        <img class="hero lazy" src="/assets/images/placeholder-hero-940x328.jpg" data-src="https://assets.voxcinemas.com/heroes/B_HO00006647.jpg" data-broken="/assets/images/broken-hero-940x328.jpg" alt="" />
+
+                        <div>
+                            <h2>RAW</h2>
+                            <span class="classification c-pg15 white">PG15</span>
+                            <span class="tag">Hindi</span>
+                            <span class="tag">150 min</span>
+                            <a class="read-more" href="/movies/raw-hindi">Info</a>
+                        </div>
+                    </aside>
+
+
+
+
+
+                    <div class="dates">
+
+                        <h3 class="highlight">Burjuman</h3>
+
+                        <ol class="showtimes">
+                            <li>
+                                <strong>GOLD by Rhodes</strong>
+                                <ol>
+                                    <li data-id="0013-119001">
+                                        <a class="action showtime" href="/booking/0013-119001">8:45pm </a>
+                                    </li>
+                                    <li data-id="0013-119002">
+                                        <a class="action showtime" href="/booking/0013-119002">12:05am </a>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <strong>Standard</strong>
+                                <ol>
+                                    <li data-id="0013-118909">
+                                        <a class="action showtime" href="/booking/0013-118909">7:20pm </a>
+                                    </li>
+                                    <li data-id="0013-119337">
+                                        <a class="action showtime" href="/booking/0013-119337">10:30pm </a>
+                                    </li>
+                                    <li data-id="0013-118801">
+                                        <a class="action showtime" href="/booking/0013-118801">12:25am </a>
+                                    </li>
+                                </ol>
+                            </li>
+                        </ol>
+
+
+                    </div>
+                </article>
+                <hr class="dashed" />
+
+                <article class="movie-compare" data-slug="lucifer-malayalam">
+                    <aside class="movie-hero" data-slug="lucifer-malayalam">
+                        <img class="hero lazy" src="/assets/images/placeholder-hero-940x328.jpg" data-src="https://assets.voxcinemas.com/heroes/B_HO00006649.jpg" data-broken="/assets/images/broken-hero-940x328.jpg" alt="" />
+
+                        <div>
+                            <h2>Lucifer</h2>
+                            <span class="classification c-pg15 white">PG15</span>
+                            <span class="tag">Malayalam</span>
+                            <span class="tag">175 min</span>
+                            <a class="read-more" href="/movies/lucifer-malayalam">Info</a>
+                        </div>
+                    </aside>
+
+
+
+
+
+                    <div class="dates">
+
+                        <h3 class="highlight">Burjuman</h3>
+
+                        <ol class="showtimes">
+                            <li>
+                                <strong>GOLD by Rhodes</strong>
+                                <ol>
+                                    <li data-id="0013-118941">
+                                        <a class="action showtime" href="/booking/0013-118941">7:30pm </a>
+                                    </li>
+                                    <li data-id="0013-118942">
+                                        <a class="action showtime" href="/booking/0013-118942">11:30pm </a>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <strong>Standard</strong>
+                                <ol>
+                                    <li data-id="0013-118645">
+                                        <a class="action showtime" href="/booking/0013-118645">8:45pm </a>
+                                    </li>
+                                    <li data-id="0013-118800">
+                                        <a class="action showtime" href="/booking/0013-118800">9:00pm </a>
+                                    </li>
+                                    <li data-id="0013-119338">
+                                        <a class="action showtime" href="/booking/0013-119338">10:25pm </a>
+                                    </li>
+                                    <li data-id="0013-119298">
+                                        <a class="action showtime" href="/booking/0013-119298">11:10pm </a>
+                                    </li>
+                                    <li data-id="0013-118646">
+                                        <a class="action showtime" href="/booking/0013-118646">12:15am </a>
+                                    </li>
+                                </ol>
+                            </li>
+                        </ol>
+
+
+                    </div>
+                </article>
+                <hr class="dashed" />
+
+                <article class="movie-compare" data-slug="argentina-fans-kaatoorkadavu-malayalam">
+                    <aside class="movie-hero" data-slug="argentina-fans-kaatoorkadavu-malayalam">
+                        <img class="hero lazy" src="/assets/images/placeholder-hero-940x328.jpg" data-src="https://assets.voxcinemas.com/heroes/B_HO00006719.jpg" data-broken="/assets/images/broken-hero-940x328.jpg" alt="" />
+
+                        <div>
+                            <h2>Argentina Fans Kaatoorkadavu</h2>
+                            <span class="classification c-pg13 white">PG13</span>
+                            <span class="tag">Malayalam</span>
+                            <span class="tag">160 min</span>
+                            <a class="read-more" href="/movies/argentina-fans-kaatoorkadavu-malayalam">Info</a>
+                        </div>
+                    </aside>
+
+
+
+
+
+                    <div class="dates">
+
+                        <h3 class="highlight">Burjuman</h3>
+
+                        <ol class="showtimes">
+                            <li>
+                                <strong>Standard</strong>
+                                <ol>
+                                    <li data-id="0013-118683">
+                                        <a class="action showtime" href="/booking/0013-118683">11:00pm </a>
+                                    </li>
+                                </ol>
+                            </li>
+                        </ol>
+
+
+                    </div>
+                </article>
+                <hr class="dashed" />
+
+                <article class="movie-compare" data-slug="kesari-hindi">
+                    <aside class="movie-hero" data-slug="kesari-hindi">
+                        <img class="hero lazy" src="/assets/images/placeholder-hero-940x328.jpg" data-src="https://assets.voxcinemas.com/heroes/B_HO00006568.jpg" data-broken="/assets/images/broken-hero-940x328.jpg" alt="" />
+
+                        <div>
+                            <h2>Kesari</h2>
+                            <span class="classification c-15p white">15+</span>
+                            <span class="tag">Hindi</span>
+                            <span class="tag">160 min</span>
+                            <a class="read-more" href="/movies/kesari-hindi">Info</a>
+                        </div>
+                    </aside>
+
+
+
+
+
+                    <div class="dates">
+
+                        <h3 class="highlight">Burjuman</h3>
+
+                        <ol class="showtimes">
+                            <li>
+                                <strong>Standard</strong>
+                                <ol>
+                                    <li data-id="0013-118837">
+                                        <a class="action showtime" href="/booking/0013-118837">7:45pm </a>
+                                    </li>
+                                </ol>
+                            </li>
+                        </ol>
+
+
+                    </div>
+                </article>
+                <hr class="dashed" />
+
+                <article class="movie-compare" data-slug="super-deluxe-tamil">
+                    <aside class="movie-hero" data-slug="super-deluxe-tamil">
+                        <img class="hero lazy" src="/assets/images/placeholder-hero-940x328.jpg" data-src="https://assets.voxcinemas.com/heroes/B_HO00006626.jpg" data-broken="/assets/images/broken-hero-940x328.jpg" alt="" />
+
+                        <div>
+                            <h2>Super Deluxe</h2>
+                            <span class="classification c-pg15 white">PG15</span>
+                            <span class="tag">Tamil</span>
+                            <span class="tag">175 min</span>
+                            <a class="read-more" href="/movies/super-deluxe-tamil">Info</a>
+                        </div>
+                    </aside>
+
+
+
+
+
+                    <div class="dates">
+
+                        <h3 class="highlight">Burjuman</h3>
+
+                        <ol class="showtimes">
+                            <li>
+                                <strong>Standard</strong>
+                                <ol>
+                                    <li data-id="0013-118872">
+                                        <a class="action showtime" href="/booking/0013-118872">8:20pm </a>
+                                    </li>
+                                    <li data-id="0013-118873">
+                                        <a class="action showtime" href="/booking/0013-118873">11:45pm </a>
+                                    </li>
+                                </ol>
+                            </li>
+                        </ol>
+
+
+                    </div>
+                </article>
+                <hr class="dashed" />
+
+                <article class="movie-compare" data-slug="badla-hindi">
+                    <aside class="movie-hero" data-slug="badla-hindi">
+                        <img class="hero lazy" src="/assets/images/placeholder-hero-940x328.jpg" data-src="https://assets.voxcinemas.com/heroes/B_HO00006567.jpg" data-broken="/assets/images/broken-hero-940x328.jpg" alt="" />
+
+                        <div>
+                            <h2>Badla</h2>
+                            <span class="classification c-pg13 white">PG13</span>
+                            <span class="tag">Hindi</span>
+                            <span class="tag">125 min</span>
+                            <a class="read-more" href="/movies/badla-hindi">Info</a>
+                        </div>
+                    </aside>
+
+
+
+
+
+                    <div class="dates">
+
+                        <h3 class="highlight">Burjuman</h3>
+
+                        <ol class="showtimes">
+                            <li>
+                                <strong>Kids</strong>
+                                <ol>
+                                    <li data-id="0013-119352">
+                                        <a class="action showtime" href="/booking/0013-119352">11:25pm </a>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <strong>Standard</strong>
+                                <ol>
+                                    <li data-id="0013-119351">
+                                        <a class="action showtime" href="/booking/0013-119351">8:35pm </a>
+                                    </li>
+                                </ol>
+                            </li>
+                        </ol>
+
+
+                    </div>
+                </article>
+                <hr class="dashed" />
+
+                <article class="movie-compare" data-slug="majili-telugu">
+                    <aside class="movie-hero" data-slug="majili-telugu">
+                        <img class="hero lazy" src="/assets/images/placeholder-hero-940x328.jpg" data-src="https://assets.voxcinemas.com/heroes/B_HO00006715.jpg" data-broken="/assets/images/broken-hero-940x328.jpg" alt="" />
+
+                        <div>
+                            <h2>Majili</h2>
+                            <span class="classification c-tbc white">TBC</span>
+                            <span class="tag">Telugu</span>
+                            <span class="tag">160 min</span>
+                            <a class="read-more" href="/movies/majili-telugu">Info</a>
+                        </div>
+                    </aside>
+
+
+
+
+
+                    <div class="dates">
+
+                        <h3 class="highlight">Burjuman</h3>
+
+                        <ol class="showtimes">
+                            <li>
+                                <strong>Standard</strong>
+                                <ol>
+                                    <li data-id="0013-118682">
+                                        <a class="action showtime" href="/booking/0013-118682">7:45pm </a>
+                                    </li>
+                                </ol>
+                            </li>
+                        </ol>
+
+
+                    </div>
+                </article>
+                <hr class="dashed" />
+
+                <article class="movie-compare" data-slug="junglee-hindi">
+                    <aside class="movie-hero" data-slug="junglee-hindi">
+                        <img class="hero lazy" src="/assets/images/placeholder-hero-940x328.jpg" data-src="https://assets.voxcinemas.com/heroes/B_HO00006663.jpg" data-broken="/assets/images/broken-hero-940x328.jpg" alt="" />
+
+                        <div>
+                            <h2>Junglee</h2>
+                            <span class="classification c-pg15 white">PG15</span>
+                            <span class="tag">Hindi</span>
+                            <span class="tag">130 min</span>
+                            <a class="read-more" href="/movies/junglee-hindi">Info</a>
+                        </div>
+                    </aside>
+
+
+
+
+
+                    <div class="dates">
+
+                        <h3 class="highlight">Burjuman</h3>
+
+                        <ol class="showtimes">
+                            <li>
+                                <strong>Standard</strong>
+                                <ol>
+                                    <li data-id="0013-118838">
+                                        <a class="action showtime" href="/booking/0013-118838">11:00pm </a>
+                                    </li>
+                                </ol>
+                            </li>
+                        </ol>
+
+
+                    </div>
+                </article>
+            </section>
+
+
+
+        </main>
+
+        <footer role="contentinfo">
+            <section class="tertiary">
+                <article>
+                    <a class="brand vox" href="/">VOX Cinemas</a>
+
+                    <div class="follow-us">
+                        <h5>Stay in touch</h5>
+                        <ul class="social-networks follow">
+                            <li><a class="facebook" href="https://www.facebook.com/voxcinemas" title="Follow us on Facebook">Facebook</a></li>
+                            <li><a class="twitter" href="https://www.twitter.com/voxcinemas" title="Follow us on Twitter">Twitter</a></li>
+                            <li><a class="instagram" href="https://www.instagram.com/voxcinemas" title="Follow us on Instagram">Instagram</a></li>
+                            <li><a class="youtube" href="https://www.youtube.com/user/voxcinemas" title="Follow us on YouTube">YouTube</a></li>
+                        </ul>
+                    </div>
+                </article>
+
+                <nav role="navigation">
+                    <h5>About</h5>
+                    <ul>
+                        <li class=""><a class="" href="/about">About Us</a></li>
+                        <li class=""><a class="" href="/faq">FAQs</a></li>
+                        <li class=""><a class="" href="/careers">Careers</a></li>
+                        <li class=""><a class="" href="/sustainability">Sustainability</a></li>
+                        <li class=""><a class="" href="/corporate-events">Groups &amp; Corporate Events</a></li>
+                        <li class=""><a class="" href="https://uae.voxcinemas.com/school-trips">School Bookings</a></li>
+                        <li class=""><a class="" href="/Anti-Fraud-Disclaimer">Anti Fraud Disclaimer</a></li>
+                    </ul>
+                </nav>
+
+                <nav role="navigation">
+                    <h5>Help & Support</h5>
+                    <ul>
+                        <li class=""><a class="" href="/privacy">Privacy Policy</a></li>
+                        <li class=""><a class="" href="/terms-and-conditions">Terms And Conditions</a></li>
+                        <li class=""><a class="" href="/terms-of-use">Terms of Use</a></li>
+                        <li class=""><a class="" href="/contact-us">Contact Us</a></li>
+                        <li class=""><a class="" href="/cinemas">Find Us</a></li>
+                    </ul>
+                </nav>
+
+                <nav role="navigation">
+                    <h5>Explore Our Site</h5>
+                    <ul>
+                        <li class=""><a class="" href="/movies/whatson">What&#39;s On</a></li>
+                        <li class=""><a class="" href="/movies/comingsoon">Coming Soon</a></li>
+                        <li class=""><a class="" href="/food-and-drinks">Food &amp; Drinks</a></li>
+                        <li class=""><a class="" href="https://uae.voxcinemas.com/action_movies">Action Movies</a></li>
+                        <li class=""><a class="" href="/ramadan-at-vox-cinemas">Ramadan at VOX Cinemas</a></li>
+                    </ul>
+                </nav>
+            </section>
+            <section>
+                <article class="applications">
+                    <h5>Download our mobile app</h5>
+
+                    <a class="application-store ios" href="https://itunes.apple.com/app/id669495038?mt&#x3D;8">Download on the AppStore</a>
+                    <a class="application-store android" href="https://play.google.com/store/apps/details?id&#x3D;com.voxcinemas.voxcinemasdev">Get it on Google Play</a>
+                </article>
+                <article>
+                    <p class="copyright">© 2019 VOX Cinemas. All rights protected.</p>
+                </article>
+            </section>
+        </footer>
+        <footer class="maf" role="contentinfo">
+            <section>
+                <article>
+                    <a class="brand maf" href="http://www.majidalfuttaim.com/">Majid Al Futtaim</a>
+                </article>
+                <article>
+                    <p>A Majid Al Futtaim company</p>
+                </article>
+            </section>
+        </footer>
+    </div>
+
+
+    <script src="/assets/javascript/blazy-96a9f448caa2bdae129fc4ba7f0530ce.js"></script>
+
+
+    <script src="/assets/javascript/polyfills-4c34ce49a0d542e8c7d6bc64cd72b850.js"></script>
+
+    <!--[if lte IE 9]>
+    <script src="/assets/javascript/placeholders-e5a06b5f07e19a9a8b856bca67eb5be0.js"></script>
+    <![endif]-->
+
+    <script src="/assets/javascript/core-d704b75362679ec7e40ee68d48929279.js"></script>
+
+
+    <script src="/assets/javascript/accordion-8a0eaf1ca5b823c83e4dedcb0f0ec2f8.js"></script>
+
+
+    <script src="/assets/javascript/blocker-f84f4907adf2051281ac3b8c77b3602a.js"></script>
+
+
+    <script src="/assets/javascript/carousel-6cd5342066d8a421091940b4311ff885.js"></script>
+
+
+    <script src="/assets/javascript/flyout-e71f89224858343872cbb7a7039e6ed9.js"></script>
+
+
+    <script src="/assets/javascript/footer-navigation-18d42839a76376669aea1ee949473be9.js"></script>
+
+
+    <script src="/assets/javascript/forms-3ccee62d9e33464635e7eeb3a97eeeb4.js"></script>
+
+
+    <script src="/assets/javascript/pagination-1d2c26c82cc684081dc7fb1af038f7fa.js"></script>
+
+
+    <script src="/assets/javascript/progress-956a67c4db20be879c67dde68a4020ce.js"></script>
+
+
+    <script src="/assets/javascript/quick-filter-d22c1b19ebeb81ae92abd89037a6f6c3.js"></script>
+
+
+    <script src="/assets/javascript/rating-7ac7ba19f5bbdf80dd11382d8426ac3d.js"></script>
+
+
+    <script src="/assets/javascript/site-banner-5f003536a69eeda8a054c4c02d0253f4.js"></script>
+
+
+    <script src="/assets/javascript/site-search-ba6f6a78c18c0723e273150ce69797c7.js"></script>
+
+
+    <script src="/assets/javascript/sticky-navigation-45fe6ede54fb1f5d73e2e46e5009d0df.js"></script>
+
+
+    <script src="/assets/javascript/tabs-8f6cc2387a56b647a897bfb7aaa6c799.js"></script>
+
+
+    <script src="/assets/javascript/toggle-e6aa29e1fe6c071882720979944e90a9.js"></script>
+
+    <script>
+        vox.events.ready(function () {
+            vox.image.async('.lazy');
+
+            new vox.components.SiteBanner(document.querySelector('.site-banner'));
+
+            new vox.components.SiteSearch(document.querySelector('.site-search'));
+
+            vox.dom.forEach(document.querySelectorAll('a.blocker'), function (el) {
+                new vox.data.Blocker(el);
+            });
+
+            new vox.components.Flyout(document.querySelector('header[role] .flyout'), {
+                localization: {
+                    menu: 'Menu',
+                    back: 'Back'
+                }
+            });
+
+            new vox.forms.Expired(document.querySelector('form.csrf:first-of-type'), {
+                threshold: 1800,
+                message: 'Your session has expired, please <a href="javascript:location.reload(true);">refresh your page</a> before continuing.'
+            });
+
+            vox.dom.forEach(document.querySelectorAll('form.auto-submit'), function (el) {
+                new vox.forms.AutoSubmit(el);
+            });
+
+            vox.dom.forEach(document.querySelectorAll('label .rating'), function (el) {
+                new vox.components.Rating(el);
+            });
+
+            vox.dom.forEach(document.querySelectorAll('.quick-filter'), function (el) {
+                new vox.components.QuickFilter(el);
+            });
+
+            vox.dom.forEach(document.querySelectorAll('.carousel'), function (el) {
+                new vox.components.Carousel(el);
+            });
+
+            vox.dom.forEach(document.querySelectorAll('footer nav'), function (el) {
+                new vox.components.FooterNavigation(el);
+            });
+        });
+    </script>
+
+
+
+    <script src="/assets/javascript/filters-38c7f566332369e47e28e6f479bd6e6e.js"></script>
+
+    <script>
+        vox.events.ready(function () {
+            new vox.components.DateFilter(document.querySelector('.date-filter'));
+        });
+    </script>
+
+</body>
+</html>
